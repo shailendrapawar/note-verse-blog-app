@@ -1,0 +1,47 @@
+.authors-card-body{
+    font-family: cursive;
+    min-width:250px ;
+    height: 200px;
+    width: 25%;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    transition: 0.1s ease-out;
+    background-color: #76ABAE;
+}
+.authors-card-body:hover{
+    transform: scale(1.02);
+}
+.author-name{
+    margin: -0px;
+    height: 20%;
+    display: grid;
+    place-items: center;
+    width: 90%;
+    border: 1px solid  #EEEEEE;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+  font-size: 1.1rem;
+    
+}
+.author-desc{
+margin: -0px;
+width: 95%;
+height: 45%;
+
+background-color:transparent;
+
+}
+.author-posts{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color:#222831;
+    color: white;
+}

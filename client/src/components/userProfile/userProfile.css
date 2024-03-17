@@ -1,0 +1,187 @@
+.userProfile-body {
+  height: auto;
+  min-height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.heading {
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: grid;
+  place-content: center;
+}
+.user-info {
+  padding: 10px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-name-posts {
+  width: 70%;
+  max-width: 450px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-name-posts span {
+  border-radius: 20px;
+  width: 50%;
+  max-width: 150px;
+  display: grid;
+  place-content: center;
+  background-color: red;
+  color: white;
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+
+.user-email {
+  background-color: grey;
+  width: 40%;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-top: -0px;
+}
+.user-info button {
+  background-color: rgb(42, 187, 249);
+  width: 250px;
+  height: 40px;
+  border: 0px;
+  border-radius: 20px;
+  font-family: cursive;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+.user-info button:hover {
+  color: white;
+  width: 200px;
+}
+.user-info button:active {
+  width: 100%;
+}
+.blog-menu-body {
+  display: flex;
+  border-radius: 20px;
+  width: 480px;
+  height: 370px;
+}
+
+.blog-menu-body:hover .edit-delete-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.edit-delete-body {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 55px;
+  align-items: center;
+}
+.edit-delete-body button {
+  height: 40px;
+  color: white;
+  border: 0px;
+  box-shadow: 0px 5px 10px black;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+.edit-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url("./edit-icon.png");
+  background-size: cover;
+  transition: 0.1s ease-in-out;
+}
+.delete-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url("./delete-icon.png");
+  background-size: cover;
+  transition: 0.1s ease-in-out;
+}
+.edit-btn:hover,
+.delete-btn:hover {
+  box-shadow: 0px 5px 10px black;
+}
+.edit-btn:active,
+.delete-btn:active {
+  box-shadow: 0px 0px 0px;
+}
+
+.user-blog-empty{
+  width: 90%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.create-btn{
+  height: 40px;
+  width: 150px;
+  background-color: rgb(42, 187, 249);
+  border: 0px;
+  font-family: cursive;
+  font-size: 1.2rem;
+  transition: 0.2s ease-in-out;
+}
+.create-btn:hover{
+ border-radius: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .blog-menu-body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: auto;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+
+  .edit-delete-body {
+    width: 100%;
+  }
+
+  .blog-menu-body:hover .edit-delete-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .user-name-posts {
+    width: 100%;
+    max-width: 450px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .user-name-posts span {
+    border-radius: 20px;
+    width: 40%;
+    font-size: 1.1rem;
+  }
+  .user-info button{
+    width: 150px;
+    font-size: 1.2rem;
+  }
+  .user-email{
+    width: 90%;
+  }
+}
